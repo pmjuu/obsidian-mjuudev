@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "3a34a8a8838cfc1b",
+        "id": "62d4889ee8d0cdb8",
         "type": "tabs",
         "children": [
           {
-            "id": "79f2267648a4c77b",
+            "id": "c999f9fd5a3707db",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Todo Dashboard.md",
+                "file": "2. Area/Daily Plan/2024/04/2024-04-20.md",
                 "mode": "preview",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Todo Dashboard.md",
+                "file": "2. Area/Daily Plan/2024/04/2024-04-20.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Todo Dashboard.md",
+                "file": "2. Area/Daily Plan/2024/04/2024-04-20.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Todo Dashboard.md"
+                "file": "2. Area/Daily Plan/2024/04/2024-04-20.md"
               }
             }
           },
@@ -158,13 +158,19 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "79f2267648a4c77b",
+  "active": "c999f9fd5a3707db",
   "lastOpenFiles": [
+    "Todo Dashboard.md",
+    "2. Area/Daily Plan/2024/04/2024-04-20.md",
+    "2. Area/Daily Plan/2024/4/2024-04-21.md",
+    "2. Area/Daily Plan/2024/4",
+    "2. Area/2024-04-20.md",
+    "{{dailyNoteTest}}.md",
+    "To Do List.md",
+    "2024-04-19.md",
     "5. Dev/tasksCalendar/일정관리 요구사항.md",
     "memo.md",
     "accumulated retro.md",
-    "To Do List.md",
-    "Todo Dashboard.md",
     "2. Area/daily note template.md",
     "5. Dev",
     "1. Project/Self question.md",
@@ -182,12 +188,7 @@
     "2. Area/Daily Plan/2024-04-11.md",
     "2. Area/Daily Plan/2024/04/2024-04-28.md",
     "2. Area/Daily Plan/2024/04/2024-04-01.md",
-    "2. Area/Daily Plan/2023/2023-12-29.md",
-    "2. Area/Daily Plan/2023/2023-12-06.md",
-    "2. Area/Daily Plan/2024-01-01.md",
     "2. Area/Daily Plan/2023",
-    "2. Area/Daily Plan/2023/2023-12-28.md",
-    "2. Area/Daily Plan/2023/2023-12-27.md",
     "2. Area/Daily Plan/2024/04",
     "2. Area/Daily Plan/2024",
     "5. Dev/tasksCalendar/view.js",
@@ -195,7 +196,6 @@
     "5. Dev/tasksCalendar",
     "Pasted image 20240408110432.png",
     "2. Area/diet journal",
-    "diet journal",
-    "2. Area/daily routine"
+    "diet journal"
   ]
 }
