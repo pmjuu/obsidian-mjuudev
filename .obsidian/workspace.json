@@ -136,21 +136,14 @@
               "type": "calendar",
               "state": {}
             }
-          },
-          {
-            "id": "dacef41721a5c48a",
-            "type": "leaf",
-            "state": {
-              "type": "timeline",
-              "state": {}
-            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 299.5
+    "width": 299.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {

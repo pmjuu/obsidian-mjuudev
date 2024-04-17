@@ -9,9 +9,9 @@ cssclasses:
 task
 WHERE !completed
 AND status != "-"
-AND file.cday < date(today) - dur(1 day)
+AND date(substring(file.name, 0, 10)) < date(today)
 AND contains(file.path, "Daily Plan")
-SORT file.cday
+SORT file.name
 ```
 
 ## Calendar
