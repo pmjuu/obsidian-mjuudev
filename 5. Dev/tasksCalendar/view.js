@@ -54,7 +54,6 @@ var taskTemplate = `
 		<a class='internal-link' href='{{taskPath}}'>
 			<div class='task {{class}}' style='{{style}}' title='{{title}}'>
 				<div class='inner'>
-					<div class='note'>{{note}}</div>
 					<div class='icon'>{{icon}}</div>
 					<div class='description' data-relative='{{relative}}'>
 						{{taskContent}}

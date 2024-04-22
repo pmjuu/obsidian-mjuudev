@@ -664,7 +664,7 @@ body:not(.is-mobile) .tasksCalendar .task:hover {
 
 /* Options classes */
 .tasksCalendar.noIcons .task .icon { display: none !important; }
-.tasksCalendar:not(.noFilename) .task.noNoteIcon .icon { display: none !important; }
+/* .tasksCalendar:not(.noFilename) .task.noNoteIcon .icon { display: none !important; } */
 .tasksCalendar.noFilename .task .note { display: none !important; }
 .tasksCalendar.filter .task.done, .tasksCalendar.filter .task.cancelled { display: none !important; }
 .tasksCalendar.filter #statisticDone { pointer-events: none !important; color: var(--text-faint) !important; }
