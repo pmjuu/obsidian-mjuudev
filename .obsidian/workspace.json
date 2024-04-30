@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "60ca8590f940038d",
+        "id": "31c9604cfc812340",
         "type": "tabs",
         "children": [
           {
-            "id": "7a1e465ba825097b",
+            "id": "f10bee93a2343922",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. Area/Daily Plan/2024/04/2024-04-25.md",
+                "file": "Todo Dashboard.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. Area/Daily Plan/2024/04/2024-04-25.md",
+                "file": "Todo Dashboard.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2. Area/Daily Plan/2024/04/2024-04-25.md",
+                "file": "Todo Dashboard.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2. Area/Daily Plan/2024/04/2024-04-25.md"
+                "file": "Todo Dashboard.md"
               }
             }
           },
@@ -158,16 +158,23 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "7a1e465ba825097b",
+  "active": "f10bee93a2343922",
   "lastOpenFiles": [
     "Todo Dashboard.md",
+    "2. Area/Daily Plan/2024/05/2024-05-01.md",
+    "2. Area/Daily Plan/2024/05/2024-05-24.md",
+    "2. Area/Daily Plan/2024/04/2024-05-24.md",
+    "2. Area/Daily Plan/2024/05",
+    "2024/05/2024-05-01.md",
+    "2024/05",
+    "2024",
+    "2. Area/Daily Plan/2024/04/2024-04-25.md",
     "2. Area/Daily Plan/2024/04/2024-04-15.md",
     "2. Area/Daily Plan/2024/04/2024-04-30.md",
     "2. Area/Daily Plan/2024/04/2024-04-21.md",
     "2. Area/Daily Plan/2024/04/2024-04-29.md",
     "README.md",
     "2. Area/Daily Plan/2024/03/2024-03-29.md",
-    "2. Area/Daily Plan/2024/04/2024-04-25.md",
     "2. Area/Daily Plan/2024/04/2024-04-08.md",
     "2. Area/Daily Plan/2024/04/2024-04-03.md",
     "2. Area/memo.md",
@@ -176,16 +183,12 @@
     "Untitled.md",
     "2. Area/Daily Plan/2024/04/2024-04-24.md",
     "2. Area/Daily Plan/2024/04/2024-04-23.md",
-    "2. Area/Daily Plan/2024/04/2024-05-24.md",
     "2. Area/Daily Plan/2024/04/2024-04-18.md",
     "2. Area/daily note template.md",
     "1. Project/diet.md",
     "2. Area/Daily Plan/2024/04/2024-04-20.md",
     "2. Area/Daily Plan/2024/02/2024-02-27.md",
     "2. Area/Wishes.md",
-    "2. Area/Daily Plan/2024/04/2024-04-19.md",
-    "2. Area/Daily Plan/2024/04/2024-04-22.md",
-    "2. Area/Daily Plan/2024-02-27.md",
     "2. Area/Daily Plan/2024/01",
     "2. Area/Daily Plan/2024/03",
     "2. Area/Daily Plan/2024/Untitled",
@@ -193,9 +196,6 @@
     "2. Area/Daily Plan/2024/01 ~ 03",
     "2. Area/Daily Plan/2024/4",
     "5. Dev/tasksCalendar/view.css",
-    "5. Dev/tasksCalendar/view.js",
-    "5. Dev/tasksCalendar",
-    "5. Dev",
     "Pasted image 20240408110432.png"
   ]
 }
