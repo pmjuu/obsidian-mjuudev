@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Todo Dashboard.md",
+                "file": "1. Project/diet.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "Todo Dashboard.md",
+            "file": "1. Project/diet.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "Todo Dashboard.md",
+            "file": "1. Project/diet.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -114,7 +114,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "Todo Dashboard.md"
+            "file": "1. Project/diet.md"
           }
         }
       },
@@ -152,8 +152,9 @@
   },
   "active": "a7a8677f2c9dd2d9",
   "lastOpenFiles": [
-    "2. Area/Daily Plan/2024/04/2024-04-20.md",
+    "1. Project/Self question.md",
     "Todo Dashboard.md",
+    "2. Area/Daily Plan/2024/04/2024-04-20.md",
     "2. Area/Daily Plan/2024/04/2024-04-17.md",
     "2024-04-16.md",
     "2024-04-18.md",
@@ -177,7 +178,6 @@
     "3. Resource/SIPE 인터뷰 후기.md",
     "2024-03-07.md",
     "4. Archive/Daily Plan/2023-12-19.md",
-    "4. Archive/Daily Plan/2024-02-17.md",
     "Untitled",
     "Health",
     "Planner"
