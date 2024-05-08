@@ -3,4 +3,19 @@
 3. Resource/*
 4. Archive/*
 memo.md
-.obsidian/
+
+# to exclude Obsidian workspace settings (including plugin and hotkey configurations)
+.obsidian/*
+
+# OR only to exclude workspace cache
+.obsidian/workspace/*
+
+# Exclude plugins
+.obsidian/plugins/*
+
+# Exclude Untitled Notes
+Untitled*
+
+# Add below lines to exclude OS settings and caches
+.trash/
+.DS_Store
