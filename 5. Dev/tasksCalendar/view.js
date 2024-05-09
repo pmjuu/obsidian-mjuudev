@@ -1,4 +1,4 @@
-let { pages, view, firstDayOfWeek, globalTaskFilter, dailyNoteFormat, startPosition, upcomingDays, css, options } = input;
+let { pages, view, firstDayOfWeek, globalTaskFilter, dailyNoteFolder, dailyNoteFormat, startPosition, upcomingDays, css, options } = input;
 
 // Error Handling
 if (!pages && pages != "") { dv.span('> [!ERROR] Missing pages parameter\n> \n> Please set the pages parameter like\n> \n> `pages: ""`'); return false };
@@ -33,7 +33,6 @@ if (!dailyNoteFormat) { dailyNoteFormat = "YYYY-MM-DD" };
 var dailyNoteRegEx = momentToRegex(dailyNoteFormat)
 var tToday = moment().format("YYYY-MM-DD");
 var tMonth = moment().format("M");
-const tMonthMM = moment().format("MM");
 var tDay = moment().format("d");
 var tYear = moment().format("YYYY");
 var tid = (new Date()).getTime();
@@ -53,7 +52,7 @@ var cellTemplate = `
 			<a class='internal-link cellName' href='{{dailyNote}}'>{{cellName}}</a>
 			<div class='cellContent'>{{cellContent}}</div>
 		</div>
-	`;
+	`.trim();
 var taskTemplate = `
 		<a class='internal-link' href='{{taskPath}}'>
 			<div class='task {{class}}' style='{{style}}' title='{{title}}'>
@@ -65,7 +64,7 @@ var taskTemplate = `
 				</div>
 			</div>
 		</a>
-	`;
+	`.trim();
 const rootNode = dv.el("div", "", { cls: "tasksCalendar " + options, attr: { id: "tasksCalendar" + tid, view: view, style: 'position:relative;-webkit-user-select:none!important' } });
 if (css) { var style = document.createElement("style"); style.innerHTML = css; rootNode.append(style) };
 var taskDoneIcon = "✅";
@@ -526,7 +525,7 @@ function getMonth(tasks, month) {
 			};
 			var currentDate = moment(month).add(i, "days").format("YYYY-MM-DD");
 			const dailyNoteFolder = `2. Area/Daily Plan/${currentDate.substring(0, 4)}/${currentDate.substring(5, 7)}`;
-			var dailyNotePath = dailyNoteFolder + "/" + currentDate;
+			const dailyNotePath = dailyNoteFolder + "/" + currentDate;
 			var weekDay = moment(month).add(i, "days").format("d");
 			var shortDayName = moment(month).add(i, "days").format("D");
 			var longDayName = moment(month).add(i, "days").format("D. MMM");
@@ -604,7 +603,7 @@ function getWeek(tasks, week) {
 	for (i = 0 - currentWeekday + parseInt(firstDayOfWeek); i < 7 - currentWeekday + parseInt(firstDayOfWeek); i++) {
 		var currentDate = moment(week).add(i, "days").format("YYYY-MM-DD");
 		const dailyNoteFolder = `2. Area/Daily Plan/${currentDate.substring(0, 4)}/${currentDate.substring(5, 7)}`;
-		if (!dailyNoteFolder) { var dailyNotePath = currentDate } else { var dailyNotePath = dailyNoteFolder + "/" + currentDate };
+		const dailyNotePath = dailyNoteFolder + "/" + currentDate;
 		var weekDay = moment(week).add(i, "days").format("d");
 		var dayName = moment(currentDate).format("ddd D.");
 		var longDayName = moment(currentDate).format("ddd, D. MMM");
