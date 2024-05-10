@@ -1,4 +1,5 @@
-let { pages, view, firstDayOfWeek, globalTaskFilter, dailyNoteFolder, dailyNoteFormat, startPosition, upcomingDays, css, options } = input;
+let { pages, view, firstDayOfWeek, globalTaskFilter, dailyNoteFormat, startPosition, upcomingDays, css, options } = input;
+const getDailyNoteFolder = (currentDate) => `2. Area/Daily Plan/${currentDate.substring(0, 4)}/${currentDate.substring(5, 7)}`;
 
 // Error Handling
 if (!pages && pages != "") { dv.span('> [!ERROR] Missing pages parameter\n> \n> Please set the pages parameter like\n> \n> `pages: ""`'); return false };
@@ -524,8 +525,7 @@ function getMonth(tasks, month) {
 				yearNr = moment(month).add(i, "days").format("YYYY");
 			};
 			var currentDate = moment(month).add(i, "days").format("YYYY-MM-DD");
-			const dailyNoteFolder = `2. Area/Daily Plan/${currentDate.substring(0, 4)}/${currentDate.substring(5, 7)}`;
-			const dailyNotePath = dailyNoteFolder + "/" + currentDate;
+			const dailyNotePath = getDailyNoteFolder(currentDate) + "/" + currentDate;
 			var weekDay = moment(month).add(i, "days").format("d");
 			var shortDayName = moment(month).add(i, "days").format("D");
 			var longDayName = moment(month).add(i, "days").format("D. MMM");
@@ -602,8 +602,7 @@ function getWeek(tasks, week) {
 
 	for (i = 0 - currentWeekday + parseInt(firstDayOfWeek); i < 7 - currentWeekday + parseInt(firstDayOfWeek); i++) {
 		var currentDate = moment(week).add(i, "days").format("YYYY-MM-DD");
-		const dailyNoteFolder = `2. Area/Daily Plan/${currentDate.substring(0, 4)}/${currentDate.substring(5, 7)}`;
-		const dailyNotePath = dailyNoteFolder + "/" + currentDate;
+		const dailyNotePath = getDailyNoteFolder(currentDate) + "/" + currentDate;
 		var weekDay = moment(week).add(i, "days").format("d");
 		var dayName = moment(currentDate).format("ddd D.");
 		var longDayName = moment(currentDate).format("ddd, D. MMM");
