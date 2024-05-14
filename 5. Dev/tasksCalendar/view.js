@@ -52,7 +52,7 @@ var calendarHeartIcon = '<svg xmlns="http://www.w3.org/2000/svg" width="24" heig
 var cellTemplate = flattenString(
 	`
 		<div class='cell {{class}}' data-weekday='{{weekday}}'>
-			<a class='internal-link cellName' href='{{dailyNote}}'>{{cellName}}</a>
+			<a class='internal-link cellName' id='{{dailyNote}}'>{{cellName}}</a>
 			<div class='cellContent'>{{cellContent}}</div>
 		</div>
 	`
@@ -386,6 +386,29 @@ function setWrapperEvents() {
 		rootNode.querySelector(`#tasksCalendar${tid} .grid`).remove();
 		getWeek(tasks, selectedDate);
 	})));
+
+	rootNode.querySelectorAll('a.internal-link.cellName').forEach(link => {
+		link.addEventListener('click', async (event) => {
+			event.preventDefault();
+			
+			const filePath = link.getAttribute('id') + '.md';
+			const templatePath = '2. Area/Daily Plan/template.md';
+
+			try {
+				await ensureFolderExists(filePath);
+
+				const fileExists = await app.vault.adapter.exists(filePath);
+
+				if (!fileExists) {
+					await createFileWithTemplate(filePath, templatePath);
+				}
+
+				await app.workspace.openLinkText(filePath, '', true);
+			} catch (error) {
+				console.error('Error creating file with template:', error);
+			}
+		});
+	});
 };
 
 function setStatisticPopUpEvents() {
@@ -720,4 +743,30 @@ function getList(tasks, month) {
 		var scrollPos = todayElement.offsetTop - todayElement.offsetHeight + 85;
 		listElement.scrollTo(0, scrollPos);
 	};
+};
+
+async function ensureFolderExists(filePath) {
+    const { vault } = app;
+    const folderPath = filePath.split('/').slice(0, -1).join('/');
+
+    const folderExists = await vault.adapter.exists(folderPath);
+
+    if (!folderExists) {
+        await vault.createFolder(folderPath);
+    }
+};
+
+async function createFileWithTemplate(filePath, templatePath) {
+    const { vault } = app;
+
+    const templateContent = await vault.adapter.read(templatePath);
+
+    // Create the new file with the template content
+    await vault.create(filePath, templateContent);
+};
+
+async function deleteFile(filePath) {
+    const { vault } = app;
+
+    await vault.delete(filePath);
 };

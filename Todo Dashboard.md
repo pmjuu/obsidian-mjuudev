@@ -9,9 +9,10 @@ cssclasses:
 task
 WHERE !completed
 AND status != "-"
+AND !contains(text, "❌")
 AND date(substring(file.name, 0, 10)) < date(today)
-AND contains(file.path, "Daily Plan")
-SORT file.name
+AND contains(file.path, "Daily Plan/20")
+SORT contains(text, "🔺") DESC, contains(text, "⏫") DESC, file.name
 ```
 
 ## Calendar
