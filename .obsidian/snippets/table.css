@@ -1,0 +1,28 @@
+.view-content > .weekly-table.markdown-source-view.mod-cm6 > .cm-editor > .cm-scroller {
+    /* padding: var(--file-margins); */
+    padding-inline: 30px; /* for Minimal */
+}
+
+.weekly-table.markdown-source-view.table-view-table td:nth-child(1) {
+    min-width: 20%;
+}
+
+.weekly-table.markdown-source-view.table-view-table td:nth-child(2) {
+    min-width: 40%;
+}
+
+.weekly-table.markdown-source-view.table-view-table td:nth-child(3) {
+    min-width: 40%;
+}
+
+.weekly-table.markdown-preview-view.table-view-table td:nth-child(1) {
+    min-width: 20%;
+}
+
+.weekly-table.markdown-preview-view.table-view-table td:nth-child(2) {
+    min-width: 40%;
+}
+
+.weekly-table.markdown-preview-view.table-view-table td:nth-child(3) {
+    min-width: 40%;
+}

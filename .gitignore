@@ -1,17 +1,17 @@
+0. Inbox/*
 1. Project/*
-2. Area/*
+2. Area/Daily Plan/*
+2. Area/Weekly/*
+2. Area/Insights/*
+2. Area/Journal/*
 3. Resource/*
 4. Archive/*
 memo.md
 
-# to exclude Obsidian workspace settings (including plugin and hotkey configurations)
-.obsidian/*
-
-# OR only to exclude workspace cache
-.obsidian/workspace/*
-
-# Exclude plugins
-.obsidian/plugins/*
+# exclude obsidian workspace settings
+.obsidian/workspace.json
+.obsidian/workspace 2.json
+.obsidian/workspace-mobile.json
 
 # Exclude Untitled Notes
 Untitled*
