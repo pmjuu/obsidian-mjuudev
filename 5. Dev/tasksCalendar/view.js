@@ -392,7 +392,7 @@ function setWrapperEvents() {
 			event.preventDefault();
 			
 			const filePath = link.getAttribute('id') + '.md';
-			const templatePath = '2. Area/Daily Plan/template.md';
+			const templatePath = '2. Area/Templates/daily.md';
 
 			try {
 				await ensureFolderExists(filePath);
