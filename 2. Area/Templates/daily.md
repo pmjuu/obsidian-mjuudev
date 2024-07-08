@@ -7,7 +7,7 @@
 
 ### Weekly Goal
 ```tasks
-path includes Weekly/2024
+path includes Weekly/20
 heading includes try
 due in this week
 ```
